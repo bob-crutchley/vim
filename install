@@ -1,7 +1,28 @@
 #!/bin/bash
-raw_github_url="https://raw.githubusercontent.com/bob-crutchley/vim/rework"
+raw_github_url="https://raw.githubusercontent.com/bob-crutchley/vim/master"
 rm -rf ~/.vim
-source <(curl -s $raw_github_url/pathogen)
-source <(curl -s $raw_github_url/plugins)
-curl -s $raw_github_url/.vimrc > ~/.vimrc
+
+echo_green() {
+	echo -e "\e[0;32m$1\e[0m"
+}
+export -f echo_green
+
+echo_yellow() {
+	echo -e "\e[0;33m$1\e[0m"
+}
+export -f echo_yellow
+
+declare -a scripts=(
+	pathogen
+	plugins
+)
+
+for script in "${scripts[@]}"
+do
+	if [ -f $script ];then
+		./$script
+	else
+		source <(curl -s $raw_github_url/$script)
+	fi
+done
 

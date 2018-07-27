@@ -1,7 +1,7 @@
 #!/bin/bash
-echo "installing pathogen..."
+echo_green "installing pathogen"
 rm -rf ~/.vim/autoload
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-echo "done"
+echo_green "done"
 

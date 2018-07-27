@@ -1,14 +1,14 @@
 #!/bin/bash
 set -e
 
-echo "installing plugins..."
+echo_green "installing plugins..."
 
 function install_plugins {
 	for plugin in "${plugins[@]}"
 	do
 		author=$(echo $plugin | awk -F\/ '{ print $1 }')
 		repo=$(echo $plugin | awk -F\/ '{ print $2 }')
-		echo "$plugin..."
+		echo_yellow "$plugin..."
 		git clone https://github.com/$author/$repo ~/.vim/bundle/$repo
 	done
 }
@@ -26,5 +26,5 @@ declare -a plugins=(
 )
 
 install_plugins
-echo "done"
+echo_green "done"
 
