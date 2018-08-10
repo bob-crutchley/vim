@@ -26,3 +26,4 @@ do
 	fi
 done
 
+curl https://raw.githubusercontent.com/bob-crutchley/vim/master/.vimrc > ~/.vimrc
