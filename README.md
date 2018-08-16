@@ -1,7 +1,7 @@
 ## My VIM Configurations
 Run this command to install:
 ```bash
-curl https://raw.githubusercontent.com/bob-crutchley/vim/master/install | bash
+git clone https://github.com/bob-crutchley/vim && cd vim && ./install
 ```
 This will overwrite `~/.vimrc` and `~/.vim`
 

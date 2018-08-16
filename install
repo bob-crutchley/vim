@@ -26,4 +26,9 @@ do
 	fi
 done
 
-curl https://raw.githubusercontent.com/bob-crutchley/vim/master/.vimrc > ~/.vimrc
+if [ -f vimrc ];then
+	cp vimrc ~/.vimrc
+else
+	curl https://raw.githubusercontent.com/bob-crutchley/vim/master/vimrc > ~/.vimrc
+fi
+
