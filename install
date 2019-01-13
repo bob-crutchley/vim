@@ -32,3 +32,10 @@ else
 	curl https://raw.githubusercontent.com/bob-crutchley/vim/master/vimrc > ~/.vimrc
 fi
 
+spellfile="en.utf-8.add"
+if [ -f ${spellfile} ];then
+	cp ${spellfile} ~/.vim/${spellfile}
+else
+	curl https://raw.githubusercontent.com/bob-crutchley/vim/master/${spellfile} > ~/.vim/${spellfile}
+fi
+

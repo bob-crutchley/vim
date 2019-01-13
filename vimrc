@@ -1,3 +1,9 @@
+" enable spell check
+set spell
+" set language to English 
+set spelllang=en
+" spell file, containing user defined words
+set spellfile=$HOME/.vim/en.utf-8.add
 " tab is 4 spaces
 set tabstop=4
 " colours to suite light terminal theme
