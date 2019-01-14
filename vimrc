@@ -7,7 +7,7 @@ set spellfile=$HOME/.vim/en.utf-8.add
 " tab is 4 spaces
 set tabstop=4
 " colours to suite light terminal theme
-set bg=light
+set bg=dark
 " show line numbers
 set number
 " enable syntax highlighting

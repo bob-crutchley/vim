@@ -1,2 +1,15 @@
 jenkins
 utf
+jenkins
+ci
+jdk
+jre
+openjdk
+wget
+europe
+west2
+PersistentDisk
+mnt
+natIP
+accessConfigs
+networkInterfaces
