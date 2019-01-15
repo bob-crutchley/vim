@@ -1,5 +1,3 @@
-" enable spell check
-set spell
 " set language to English 
 set spelllang=en
 " spell file, containing user defined words
@@ -18,6 +16,8 @@ execute pathogen#infect()
 let NERDTreeQuitOnOpen=1
 " toggle the NERDTree with Ctrl + N
 map <c-n> :NERDTreeToggle<cr>
+" toggle spell check with Ctrl + S
+map <c-d> :setlocal spell!<cr>
 " stop terminal bell sounds
 set noeb vb t_vb=
 
