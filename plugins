@@ -23,6 +23,7 @@ declare -a plugins=(
 	ervandew/supertab
 	xuyuanp/nerdtree-git-plugin
 	vim-airline/vim-airline
+	ekalinin/dockerfile.vim
 )
 
 install_plugins
